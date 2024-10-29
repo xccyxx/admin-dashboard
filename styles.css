@@ -1,0 +1,38 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.sidebar {
+    background-color: turquoise;
+    padding: 10%;
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-rows: repeat(10, 1fr) 6fr;
+    justify-items: start;
+    align-items: center;
+    color: white;
+    font-weight: 700;
+}
+
+.sidebar .logo,
+.sidebar .communities {
+    margin-bottom: 1.5rem;
+}
+
+.header {
+    background-color: pink;
+    grid-column: 2 / -1;    
+}
+
+.main-content {
+    background-color: yellowgreen;
+    grid-area: 2 / 2 / 3 / 3;
+}
