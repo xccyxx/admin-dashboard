@@ -10,18 +10,32 @@
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="logo"><a href="#">Dashboard</a></div>
-            <div class="home"><a href="#">Home</a></div>
-            <div class="profile"><a href="#">Profile</a></div>
-            <div class="messages"><a href="#">Messages</a></div>
-            <div class="history"><a href="#">History</a></div>
-            <div class="tasks"><a href="#">Tasks</a></div>
-            <div class="communities"><a href="#">Communities</a></div>
-            <div class="settings"><a href="#">Settings</a></div>
-            <div class="support"><a href="#">Support</a></div>
-            <div class="privacy"><a href="#">Privacy</a></div>
+            <a class="logo-icon" href="#">
+                <img src="icons/dashboard.svg" alt="Dashboard Icon" />
+            </a>
+            <div class="logo-text">
+                <a href="#">Dashboard</a>
+            </div>
+            <div class="user-menu">
+                <div class="home"><a href="#">Home</a></div>
+                <div class="profile"><a href="#">Profile</a></div>
+                <div class="messages"><a href="#">Messages</a></div>
+                <div class="history"><a href="#">History</a></div>
+                <div class="tasks"><a href="#">Tasks</a></div>
+                <div class="communities"><a href="#">Communities</a></div>
+            </div>
+            <div class="utilities-menu">
+                <div class="settings"><a href="#">Settings</a></div>
+                <div class="support"><a href="#">Support</a></div>
+                <div class="privacy"><a href="#">Privacy</a></div>
+            </div>
+
         </div>
         <div class="header">
+            <div class="search-section">
+                <img class="magnify-icon" src="icons/magnify.svg" alt="Magnify">
+                <input class="search-bar" type="search">
+            </div>
             <div class="user-info">User Info</div>
             <button class="new">New</button>
             <button class="upload">Upload</button>

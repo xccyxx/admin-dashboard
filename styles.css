@@ -12,24 +12,61 @@ a {
 
 .sidebar {
     background-color: turquoise;
-    padding: 10%;
-    grid-row: 1 / -1;
+    /* padding: 0 10%;
+    grid-row: 1 / -1; */
     display: grid;
-    grid-template-rows: repeat(10, 1fr) 6fr;
+    /* grid-template-rows: 2fr 6fr 3fr 6fr;
     justify-items: start;
     align-items: center;
     color: white;
     font-weight: 700;
+    column-gap: 0.5rem; */
 }
 
-.sidebar .logo,
-.sidebar .communities {
-    margin-bottom: 1.5rem;
+
+.sidebar > .logo-text {
+    font-size: 1.5rem;
+    justify-self: start;
+}
+
+.sidebar > .logo-section {
+    font-size: 1.5rem;
+}
+
+.sidebar > div {
+    display: grid;
+    gap: 1rem;
 }
 
 .header {
     background-color: pink;
     grid-column: 2 / -1;    
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 5fr 4fr;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+
+.search-section {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
+
+.search-section > .magnify-icon {
+    justify-self: end;
+    height: 1.5rem;
+    width: auto;
+}
+
+.search-section > .search-bar {
+    height: 2rem;
+    margin: 0 1rem 0 0.5rem;
+    border-radius: 50px;
+    background-color: rgb(242, 242, 242);
+    border: none;
 }
 
 .main-content {
