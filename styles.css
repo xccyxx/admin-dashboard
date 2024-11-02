@@ -10,32 +10,31 @@ a {
     grid-template-rows: 1fr 4fr;
 }
 
-.sidebar {
+.sidebar {  
     background-color: turquoise;
-    /* padding: 0 10%;
-    grid-row: 1 / -1; */
-    display: grid;
-    /* grid-template-rows: 2fr 6fr 3fr 6fr;
-    justify-items: start;
-    align-items: center;
+    padding: 0 5%;
+    grid-row: 1 / -1;
     color: white;
+    font-size: 1.5rem;
     font-weight: 700;
-    column-gap: 0.5rem; */
-}
-
-
-.sidebar > .logo-text {
-    font-size: 1.5rem;
-    justify-self: start;
-}
-
-.sidebar > .logo-section {
-    font-size: 1.5rem;
-}
-
-.sidebar > div {
     display: grid;
+    grid-template-rows: 1fr 5fr auto;
+}
+
+.sidebar .menu-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
     gap: 1rem;
+}
+
+.menu-item .icon {
+    height: 2rem;
+}
+
+.menu-item .dashboard-icon {
+    height: 4rem;
+    width: auto;
 }
 
 .header {
