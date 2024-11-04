@@ -1,3 +1,9 @@
+:root {
+    --standard-icon-height: 1.7rem;
+    --profile-picture-height: 7rem;
+    --standard-padding: clamp(1rem, 2vw, 2rem);
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -12,29 +18,41 @@ a {
 
 .sidebar {  
     background-color: turquoise;
-    padding: 0 5%;
+    padding: var(--standard-padding);
     grid-row: 1 / -1;
     color: white;
     font-size: 1.5rem;
     font-weight: 700;
     display: grid;
-    grid-template-rows: 1fr 5fr auto;
+    grid-template-rows: 1.5fr 6fr 3fr 9fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.sidebar > .menu-section, .dashboard-section {
+    display: grid;
+    gap: 1rem;
+}
+
+.sidebar .dashboard-section {
+    font-size: 2rem;
 }
 
 .sidebar .menu-item {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 5fr;
     align-items: center;
     gap: 1rem;
 }
 
 .menu-item .icon {
-    height: 2rem;
+    height: 2.5rem;
+    width: auto;
+    justify-self: center;
 }
 
 .menu-item .dashboard-icon {
     height: 4rem;
-    width: auto;
 }
 
 .header {
@@ -42,11 +60,12 @@ a {
     grid-column: 2 / -1;    
     display: grid;
     grid-template-rows: 1fr 2fr;
-    grid-template-columns: 5fr 4fr;
-    padding: 1rem;
+    grid-template-columns: 6fr 4fr;
+    padding: 1rem var(--standard-padding);
     gap: 1rem;
+    position: relative;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
-
 
 .search-section {
     display: grid;
@@ -56,16 +75,42 @@ a {
 
 .search-section > .magnify-icon {
     justify-self: end;
-    height: 1.5rem;
+    height: var(--standard-icon-height);
     width: auto;
 }
 
 .search-section > .search-bar {
     height: 2rem;
-    margin: 0 1rem 0 0.5rem;
     border-radius: 50px;
     background-color: rgb(242, 242, 242);
     border: none;
+    padding: 0.5rem 1rem;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 4rem;
+    padding-right: 4rem;
+}
+
+.profile-section .noti-icon {
+    height: var(--standard-icon-height);
+    width: auto;
+}
+
+.profile-picture {  
+    width: var(--profile-picture-height); 
+    height: var(--profile-picture-height); 
+    border-radius: 50%;
+    object-fit: cover; 
+    object-position: center; 
+    overflow: hidden; 
+}
+
+.profile-section .user-name {
+    font-size: 24px;
 }
 
 .main-content {
