@@ -1,6 +1,7 @@
 :root {
     --standard-icon-height: 1.7rem;
     --profile-picture-width: 7rem;
+    --card-shadow: 1.0px 1.9px 1.9px hsl(0deg 0% 0% / 0.47);
 }
 
 a {
@@ -136,7 +137,7 @@ a {
     align-self: start;
 }
 
-.button-section {
+.buttons-section {
     align-self: center;
     justify-self: end;
     display: grid;
@@ -144,7 +145,7 @@ a {
     column-gap: 3rem;
 }
 
-.button-section > button {
+.buttons-section > button {
     background-color: rgba(67, 149, 255, 0.661);
     color: white;
     font-size: 1.4rem;
@@ -155,5 +156,46 @@ a {
 
 .main-content {
     background-color: yellowgreen;
-    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 3rem;
+    gap: 3rem;
 }
+
+.main-content h1 {
+    margin: 0 0 0.5rem 0;
+}
+
+.main-content .projects-section {
+    display: grid;
+    grid-row: 1 / -1;
+    grid-column: 1 / 2;
+    grid-template-rows: auto 1fr;
+}
+
+.cards-container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 16px;
+    padding: 3rem;
+    box-shadow: var(--card-shadow);
+}
+
+.main-content .announcements-section {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+}
+
+.main-content .trending-section {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
