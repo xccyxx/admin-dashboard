@@ -182,6 +182,27 @@ a {
     gap: 2rem;
 }
 
+.card {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.card h3, p {
+    margin: 0 0 1rem 0;
+}
+
+.card .icons-container {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+.card .icon {
+    height: var(--standard-icon-height);
+    width: auto;
+}
+
+
 .card,
 .announcements-container,
 .trending-container {
