@@ -182,11 +182,23 @@ a {
     gap: 2rem;
 }
 
-.card {
+.card,
+.announcements-container,
+.trending-container {
     background-color: white;
     border-radius: 16px;
-    padding: 3rem;
     box-shadow: var(--card-shadow);
+}
+
+.card,
+.announcements-container {
+    padding: 3rem;
+}
+
+.main-content .announcements-section,
+.main-content .trending-section {
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .main-content .announcements-section {
