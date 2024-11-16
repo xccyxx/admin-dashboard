@@ -8,3 +8,4 @@
 - [Astronaut icons](https://www.flaticon.com/free-icons/astronaut) created by [Freepik](https://www.flaticon.com/authors/freepik) - Flaticon
 - [Photographer icons](https://www.flaticon.com/free-icons/photographer) created by [Freepik](https://www.flaticon.com/authors/freepik) - Flaticon
 - Additional icons from [Pictogrammers](https://pictogrammers.com/)
+- Fonts used: [Lato](https://fonts.google.com/specimen/Lato?query=Lato) provided by [Google Fonts](https://fonts.google.com/).
