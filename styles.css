@@ -190,10 +190,15 @@ a {
 .card {
     display: grid;
     grid-template-rows: auto 1fr auto;
+    border-left: 10px rgb(251, 213, 63) solid;
 }
 
-.card h3, p {
+.card h3 {
     margin: 0 0 1rem 0;
+}
+
+.card p {
+    margin: 0;
 }
 
 .card .icons-container {
